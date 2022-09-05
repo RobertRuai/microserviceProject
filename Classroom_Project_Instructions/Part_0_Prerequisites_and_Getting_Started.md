@@ -233,7 +233,8 @@ setx POSTGRES_DB postgres
 setx AWS_BUCKET test-nd9990-dev-wc
 setx AWS_REGION us-east-1
 setx AWS_PROFILE nd9990
-setx JWT_SECRET hello
+setx JWT_SECRET hellosetx POSTGRES_PASSWORD abcd1234
+
 setx URL http://localhost:8100
 ```
 
