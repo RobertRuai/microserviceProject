@@ -28,7 +28,7 @@ script:
   - docker tag reverseproxy roberto77/reverseproxy:latest
 
 
-after success:
+after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push roberto77/reverseproxy
   - docker push roberto77/udagram-api-user
