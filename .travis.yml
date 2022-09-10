@@ -10,7 +10,7 @@ install:
   - echo "nothing needs to be installed"
 
 # scripts to be run such as tests
- before_script:
+before_script:
   - echo "no tests" 
 
 script:
