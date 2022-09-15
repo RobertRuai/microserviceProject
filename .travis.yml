@@ -33,7 +33,7 @@ after_success:
   - docker push roberto77/reverseproxy
   - docker push roberto77/udagram-api-user
   - docker push roberto77/udagram-api-feed
-  - docker push roberto77/udagram-frontend:local
+  - docker push roberto77/udagram-frontend
 
 
   
