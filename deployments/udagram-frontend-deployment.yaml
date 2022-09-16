@@ -19,3 +19,10 @@ spec:
         image: roberto77/udagram-frontend
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: "50Mi"
+            cpu: "20m"
+          limits:
+            memory: "150Mi"
+            cpu: "50m"  
