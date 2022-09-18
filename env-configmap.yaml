@@ -4,7 +4,7 @@ meatadata:
   name: example-configmap
 
 data:
- POSTGRES_HOST: databasemicro.c5mfff9zyvot.us-east-2.rds.amazonaws.com
+ POSTGRES_HOST: databasemicro.czz4jhavn5qe.us-east-2.rds.amazonaws.com
  AWS_BUCKET: microdevbucket
  AWS_REGION: us-east-2
  AWS_PROFILE: user
