@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
-meatadata: 
+
+metadata: 
   name: example-configmap
 
 data:
