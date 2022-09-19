@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: roberto77/udagram-api-feed
+        image: roberto77/udagram-api-feed:v3
         ports:
          - containerPort: 8080
         envFrom:
         - configMapRef:
-           name: example-configmap 
+           name: example-configmap
         - secretRef:
             name: env-secret-credentials
         resources:

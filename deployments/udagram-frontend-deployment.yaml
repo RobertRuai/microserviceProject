@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: roberto77/udagram-frontend
+        image: roberto77/udagram-frontend:v3
         ports:
         - containerPort: 80
         resources:
@@ -25,4 +25,4 @@ spec:
             cpu: "20m"
           limits:
             memory: "150Mi"
-            cpu: "50m"  
+            cpu: "50m"
