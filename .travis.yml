@@ -18,21 +18,21 @@ script:
   
   - docker-compose -f docker-compose-build.yaml build --parallel
 
-  - docker tag udagram-api-feed roberto77/udagram-api-feed:v5
+  - docker tag udagram-api-feed roberto77/udagram-api-feed:v6
 
-  - docker tag udagram-api-user roberto77/udagram-api-user:v5
+  - docker tag udagram-api-user roberto77/udagram-api-user:v6
 
-  - docker tag udagram-frontend roberto77/udagram-frontend:v5
+  - docker tag udagram-frontend roberto77/udagram-frontend:v8
 
-  - docker tag reverseproxy roberto77/reverseproxy:v5
+  - docker tag reverseproxy roberto77/reverseproxy:v6
 
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push roberto77/reverseproxy:v5
-  - docker push roberto77/udagram-api-user:v5
-  - docker push roberto77/udagram-api-feed:v5
-  - docker push roberto77/udagram-frontend:v5
+  - docker push roberto77/reverseproxy:v6
+  - docker push roberto77/udagram-api-user:v6
+  - docker push roberto77/udagram-api-feed:v6
+  - docker push roberto77/udagram-frontend:v8
 
 
   

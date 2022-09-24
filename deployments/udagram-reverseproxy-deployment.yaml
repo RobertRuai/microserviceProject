@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: roberto77/reverseproxy:v5
+        image: roberto77/reverseproxy:v6
         imagePullPolicy: Always
         resources:
           requests:
@@ -32,3 +32,5 @@ spec:
            name: example-configmap
         - secretRef:
             name: env-secret-credentials
+        - secretRef:
+            name: aws-secret-credentials
